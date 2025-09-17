@@ -103,29 +103,9 @@
             key-positions = <15 21>;
         };
 
-        perc {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
-        };
-
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <28 16>;
-        };
-
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <4 16>;
-        };
-
-        pound {
-            bindings = <&kp POUND>;
-            key-positions = <3 15>;
-        };
-
-        at {
-            bindings = <&kp AT>;
-            key-positions = <2 14>;
         };
 
         backslash {
@@ -143,19 +123,9 @@
             key-positions = <26 27>;
         };
 
-        star {
-            bindings = <&kp STAR>;
-            key-positions = <8 20>;
-        };
-
         slash {
             bindings = <&kp SLASH>;
             key-positions = <32 20>;
-        };
-
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <7 19>;
         };
 
         minus {
@@ -211,6 +181,21 @@
         windowsright {
             bindings = <&kp LG(RIGHT)>;
             key-positions = <36 28>;
+        };
+
+        f1 {
+            bindings = <&kp F1>;
+            key-positions = <0 12>;
+        };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <1 13>;
+        };
+
+        f3 {
+            bindings = <&kp F3>;
+            key-positions = <14 2>;
         };
     };
 
