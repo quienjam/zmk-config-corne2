@@ -197,6 +197,51 @@
             bindings = <&kp F3>;
             key-positions = <14 2>;
         };
+
+        f4 {
+            bindings = <&kp F4>;
+            key-positions = <3 15>;
+        };
+
+        f5 {
+            bindings = <&kp F5>;
+            key-positions = <4 16>;
+        };
+
+        f6 {
+            bindings = <&kp F6>;
+            key-positions = <5 17>;
+        };
+
+        f7 {
+            bindings = <&kp F7>;
+            key-positions = <6 18>;
+        };
+
+        f8 {
+            bindings = <&kp F8>;
+            key-positions = <7 19>;
+        };
+
+        f9 {
+            bindings = <&kp F9>;
+            key-positions = <8 20>;
+        };
+
+        f10 {
+            bindings = <&kp F10>;
+            key-positions = <9 21>;
+        };
+
+        f11 {
+            bindings = <&kp F11>;
+            key-positions = <10 22>;
+        };
+
+        f12 {
+            bindings = <&kp F12>;
+            key-positions = <11 23>;
+        };
     };
 
     //
@@ -231,10 +276,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp ESC     &kp N1  &kp N2    &kp N3        &kp N4           &kp N5           &kp N6  &kp N7      &kp N8  &kp N9  &kp N0  &kp DEL
-&caps_word  &trans  &trans    &kp UP_ARROW  &browsertab      &kp PAGE_UP      &kp N0  &kp N4      &kp N5  &kp N6  &trans  &trans
-&trans      &trans  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans  &kp N1      &kp N2  &kp N3  &trans  &trans
-                              &kp LGUI      &trans           &kp SPACE        &kp N0  &kp PERIOD  &trans
+&kp ESC  &kp N1  &kp N2    &kp N3        &kp N4           &kp N5           &kp N6  &kp N7      &kp N8  &kp N9  &kp N0  &kp DEL
+&trans   &trans  &trans    &kp UP_ARROW  &browsertab      &kp PAGE_UP      &kp N0  &kp N4      &kp N5  &kp N6  &trans  &trans
+&trans   &trans  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans  &kp N1      &kp N2  &kp N3  &trans  &trans
+                           &kp LGUI      &trans           &kp SPACE        &kp N0  &kp PERIOD  &trans
             >;
         };
 
