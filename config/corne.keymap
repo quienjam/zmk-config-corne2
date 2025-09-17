@@ -84,7 +84,7 @@
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_SHIFT &kp ESC>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT &kp LEFT_SHIFT &kp ESC>;
+                <&kp LCTRL &kp LEFT_SHIFT &kp ESC>;
 
             label = "CONTROLPANEL";
         };
@@ -192,6 +192,26 @@
             bindings = <&controlpanel>;
             key-positions = <24 12 0>;
         };
+
+        windowsup {
+            bindings = <&kp LG(UP_ARROW)>;
+            key-positions = <36 15>;
+        };
+
+        windowsleft {
+            bindings = <&kp LG(LEFT)>;
+            key-positions = <36 26>;
+        };
+
+        windowsdown {
+            bindings = <&kp LG(DOWN)>;
+            key-positions = <36 27>;
+        };
+
+        windowsright {
+            bindings = <&kp LG(RIGHT)>;
+            key-positions = <36 28>;
+        };
     };
 
     //
@@ -226,7 +246,7 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp ESC     &kp N1  &kp N2    &kp N3        &kp N4           &kp N5           &kp N6  &kp N7      &kp N8  &kp N9  &kp N0  &trans
+&kp ESC     &kp N1  &kp N2    &kp N3        &kp N4           &kp N5           &kp N6  &kp N7      &kp N8  &kp N9  &kp N0  &kp DEL
 &caps_word  &trans  &trans    &kp UP_ARROW  &browsertab      &kp PAGE_UP      &kp N0  &kp N4      &kp N5  &kp N6  &trans  &trans
 &trans      &trans  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans  &kp N1      &kp N2  &kp N3  &trans  &trans
                               &kp LGUI      &trans           &kp SPACE        &kp N0  &kp PERIOD  &trans
