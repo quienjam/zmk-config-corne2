@@ -88,18 +88,60 @@
 
             label = "CONTROLPANEL";
         };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "COPY";
+        };
+
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "CUT";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "PASTE";
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
         paste {
-            bindings = <&kp C_AC_PASTE>;
+            bindings = <&paste>;
             key-positions = <28 27>;
         };
 
         copy {
-            bindings = <&kp C_AC_COPY>;
+            bindings = <&copy>;
             key-positions = <26 27>;
         };
 
@@ -109,12 +151,12 @@
         };
 
         minus {
-            bindings = <&kp KP_MINUS>;
+            bindings = <&kp MINUS>;
             key-positions = <7 8>;
         };
 
         underscore {
-            bindings = <&kp KP_PLUS>;
+            bindings = <&kp EQUAL>;
             key-positions = <8 9>;
         };
 
@@ -224,7 +266,7 @@
         };
 
         cut {
-            bindings = <&kp C_AC_CUT>;
+            bindings = <&cut>;
             key-positions = <26 25>;
         };
 
