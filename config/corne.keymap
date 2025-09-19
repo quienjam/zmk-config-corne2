@@ -94,12 +94,12 @@
         compatible = "zmk,combos";
 
         paste {
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp C_AC_PASTE>;
             key-positions = <28 27>;
         };
 
         copy {
-            bindings = <&kp K_COPY>;
+            bindings = <&kp C_AC_COPY>;
             key-positions = <26 27>;
         };
 
@@ -224,18 +224,8 @@
         };
 
         cut {
-            bindings = <&kp K_CUT>;
+            bindings = <&kp C_AC_CUT>;
             key-positions = <26 25>;
-        };
-
-        lessthan {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <32 31>;
-        };
-
-        greaterthan {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <33 32>;
         };
 
         question {
