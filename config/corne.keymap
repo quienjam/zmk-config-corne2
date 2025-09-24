@@ -62,6 +62,42 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
         };
+
+        windowsup: windowsup {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WINDOWSUP";
+            bindings = <&kp E>, <&kp LG(UP_ARROW)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        windowsleft: windowsleft {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WINDOWSLEFT";
+            bindings = <&kp S>, <&kp LG(LEFT)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        windowsright: windowsright {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WINDOWSRIGHT";
+            bindings = <&kp F>, <&kp LG(RIGHT)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        windowsdown: windowsdown {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WINDOWSDOWN";
+            bindings = <&kp D>, <&kp LG(DOWN)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
     };
 
     macros {
@@ -130,6 +166,18 @@
 
             label = "PASTE";
         };
+
+        loss: loss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_ALT &kp DELETE>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_ALT &kp DELETE>;
+
+            label = "LOSS";
+        };
     };
 
     combos {
@@ -181,28 +229,8 @@
         };
 
         controlpanel {
-            bindings = <&controlpanel>;
+            bindings = <&kp LS(LC(ESCAPE))>;
             key-positions = <24 12 0>;
-        };
-
-        windowsup {
-            bindings = <&kp LG(UP_ARROW)>;
-            key-positions = <36 15>;
-        };
-
-        windowsleft {
-            bindings = <&kp LG(LEFT)>;
-            key-positions = <36 26>;
-        };
-
-        windowsdown {
-            bindings = <&kp LG(DOWN)>;
-            key-positions = <36 27>;
-        };
-
-        windowsright {
-            bindings = <&kp LG(RIGHT)>;
-            key-positions = <36 28>;
         };
 
         f1 {
@@ -284,6 +312,26 @@
             bindings = <&kp GRAVE>;
             key-positions = <0 1>;
         };
+
+        loss {
+            bindings = <&kp LC(LA(DEL))>;
+            key-positions = <23 35 11>;
+        };
+
+        all {
+            bindings = <&kp LC(A)>;
+            key-positions = <13 12>;
+        };
+
+        save {
+            bindings = <&kp LC(S)>;
+            key-positions = <14 13>;
+        };
+
+        search {
+            bindings = <&kp LC(F)>;
+            key-positions = <15 16>;
+        };
     };
 
     //
@@ -301,10 +349,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp TAB              &kp Q  &kp W  &kp E     &kp R      &kp T          &kp Y        &kp U  &kp I         &kp O    &kp P     &kp BACKSPACE
-&mt LEFT_SHIFT CAPS  &kp A  &kp S  &kp D     &kp F      &kp G          &kp H        &kp J  &kp K         &kp L    &kp SEMI  &kp SQT
-&kp LCTRL            &kp Z  &kp X  &kp C     &kp V      &kp B          &kp N        &kp M  &kp COMMA     &kp DOT  &kp FSLH  &mt RIGHT_SHIFT CAPSLOCK
-                                   &kp LGUI  &kp SPACE  &lt 1 SPACE    &lt 2 ENTER  &mo 2  &kp LEFT_ALT
+&kp TAB              &kp Q  &kp W         &windowsup    &kp R          &kp T          &kp Y        &kp U  &kp I         &kp O    &kp P     &kp BACKSPACE
+&mt LEFT_SHIFT CAPS  &kp A  &windowsleft  &windowsdown  &windowsright  &kp G          &kp H        &kp J  &kp K         &kp L    &kp SEMI  &kp SQT
+&kp LCTRL            &kp Z  &kp X         &kp C         &kp V          &kp B          &kp N        &kp M  &kp COMMA     &kp DOT  &kp FSLH  &mt RIGHT_SHIFT CAPSLOCK
+                                          &kp LGUI      &kp SPACE      &lt 1 SPACE    &lt 2 ENTER  &mo 2  &kp LEFT_ALT
             >;
         };
 
