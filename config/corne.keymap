@@ -205,7 +205,7 @@
 
         underscore {
             bindings = <&kp EQUAL>;
-            key-positions = <8 9>;
+            key-positions = <9 10>;
         };
 
         leftbrack {
@@ -320,17 +320,22 @@
 
         all {
             bindings = <&kp LC(A)>;
-            key-positions = <13 12>;
+            key-positions = <13 14>;
         };
 
         save {
             bindings = <&kp LC(S)>;
-            key-positions = <14 13>;
+            key-positions = <14 15>;
         };
 
         search {
             bindings = <&kp LC(F)>;
             key-positions = <15 16>;
+        };
+
+        printscreen {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <24 12 10>;
         };
     };
 
