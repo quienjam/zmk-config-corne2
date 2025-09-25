@@ -320,7 +320,7 @@
 
         all {
             bindings = <&kp LC(A)>;
-            key-positions = <13 14>;
+            key-positions = <12 13>;
         };
 
         save {
