@@ -388,10 +388,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC  &trans  &trans          &kp UP_ARROW  &trans           &trans       &kp CARET  &kp AMPS    &kp ASTRK    &kp LEFT_PARENTHESIS  &kp RPAR  &trans
-&trans   &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp GRAVE    &kp MINUS  &kp DOLLAR  &kp PERCENT  &kp CARET             &kp BSLH  &trans
-&trans   &trans  &trans          &trans        &trans           &kp TILDE    &kp UNDER  &kp EXCL    &kp AT       &kp HASH              &kp PIPE  &trans
-                                 &kp LGUI      &trans           &kp SPACE    &kp RET    &trans      &trans
+&kp ESC  &kp NUMBER_1  &kp NUMBER_2    &kp UP_ARROW  &kp NUMBER_4     &kp N5       &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0    &trans
+&trans   &trans        &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp GRAVE    &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp BSLH  &trans
+&trans   &trans        &trans          &trans        &trans           &kp TILDE    &kp UNDER     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PIPE  &trans
+                                       &kp LGUI      &trans           &kp SPACE    &kp RET       &trans        &trans
             >;
         };
 
