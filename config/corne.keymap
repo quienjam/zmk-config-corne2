@@ -337,6 +337,11 @@
             bindings = <&kp PRINTSCREEN>;
             key-positions = <24 12 10>;
         };
+
+        double_quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <22 21>;
+        };
     };
 
     //
