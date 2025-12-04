@@ -98,6 +98,42 @@
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
+
+        parenthesiscurly: parenthesiscurly {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PARENTHESISCURLY";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        rightparenthcurly: rightparenthcurly {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHTPARENTHCURLY";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        squaregreatlessthan: squaregreatlessthan {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SQUAREGREATLESSTHAN";
+            bindings = <&kp LEFT_BRACKET>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        rightsquaregreatlessthan: rightsquaregreatlessthan {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHTSQUAREGREATLESSTHAN";
+            bindings = <&kp RIGHT_BRACKET>, <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -209,22 +245,22 @@
         };
 
         leftbrack {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&squaregreatlessthan>;
             key-positions = <31 32>;
         };
 
         rightbrack {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&rightsquaregreatlessthan>;
             key-positions = <33 32>;
         };
 
         para-less {
-            bindings = <&paraless>;
+            bindings = <&parenthesiscurly>;
             key-positions = <20 19>;
         };
 
         para-great {
-            bindings = <&paragreat>;
+            bindings = <&parenthesiscurly>;
             key-positions = <20 21>;
         };
 
