@@ -260,7 +260,7 @@
         };
 
         para-great {
-            bindings = <&parenthesiscurly>;
+            bindings = <&rightparenthcurly>;
             key-positions = <20 21>;
         };
 
