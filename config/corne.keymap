@@ -141,6 +141,13 @@
             #binding-cells = <0>;
             bindings = <&lt 1 SPACE>, <&tog 1>;
         };
+
+        layer2_toggle_hold: layer2_toggle_hold {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYER2_TOGGLE_HOLD";
+            #binding-cells = <0>;
+            bindings = <&lt 2 SPACE>, <&tog 1>;
+        };
     };
 
     macros {
